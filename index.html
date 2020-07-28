@@ -13,16 +13,50 @@
     />
   </head>
   <body>
-    <input type="text" id="input" name="input" aria-label="text" /><br />
-    <input type="date" id="date" name="date" aria-label="date" /><br />
-    <input type="number" id="nubers" name="numbers" aria-label="numbers" />
-    <input
-      class="btn btn-primary"
-      type="submit"
-      id="myBtn"
-      value="Submit"
-      aria-label="button"
-    />
+    <div class="container">
+      <input type="text" id="textInput" name="input" aria-label="text" /><br />
+      <input type="date" id="dateInput" name="date" aria-label="date" /><br />
+      <input
+        type="number"
+        id="numbersInput"
+        name="numbers"
+        aria-label="numbers"
+      />
+      <input
+        class="btn btn-primary"
+        type="submit"
+        id="myAddBtn"
+        value="Add"
+        aria-label="button"
+        onclick="addTasksFunction()"
+      />
+
+      <table id="table" class="table table-dark">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Number</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div id="deleteTasks">
+        <input type="number" id="textDelete" name="input" aria-label="text" />
+        <input
+          class="btn btn-primary"
+          type="submit"
+          id="myDeleteBtn"
+          value="Delete"
+          aria-label="button"
+          onclick="deleteTasksFunction()"
+        />
+      </div>
+
+      <p>Total number of tasks</p>
+      <div id="total"></div>
+    </div>
     <script src="script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
