@@ -26,6 +26,8 @@ function deleteTasksFunction() {
   } else {
     table.deleteRow(textDelete);
   }
+  let counter = table.rows.length - 1;
+  document.getElementById("total").innerHTML = counter;
 }
 
 //Change fontWeight
@@ -51,7 +53,7 @@ document
       let nrOfRows = table.rows.length;
       console.log("Press the enter key");
       console.dir(table);
-      for (i = 0; i < nrOfRows; i++) {
+      for (let i = 1; i < nrOfRows; i++) {
         let currentTaskName = table.rows[i].innerText;
         if (currentTaskName.includes(searchFor)) {
           table.rows[i].style.display = "block";
