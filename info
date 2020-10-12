@@ -1,9 +1,0 @@
-create a todo list program with the following features
-1. you have an input box with text, an input box with date, an input box with numbers and an add button next to it. When the user clicks the button an item is inserted at the specified position from the 3rd input box in a table with the text from input box with text and date from input box with date, after the item is inserted the input boxes contents are cleared
-2. at the end of the list there is an input box with a button next to it. When the user clicks button the item index of x is removed where x is the value from the input box next to it. An alert is shown if the value of the input box is not a number or not existent in the list
-3. when the user hovers with his mouse over a list item, that item is bolded and unbolded when the mouse is not over the item anymore - use mouseover event to add or remove classes to table row
-4. add an input box of type text. When the user presses enter only the rows with text included in the input box are shown (you can apply the hidden property to the elements that do not match what you write in the name). When you have the tasks filtered, you can not press anymore the delete row button
-optional: use bootstrap to style your list
-5. at the end of the table there is a counter showing you the total number of tasks available
-
-optional: use bootstrap to style your list
